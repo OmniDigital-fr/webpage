@@ -29,7 +29,7 @@ SEO incluído: títulos e meta descriptions por página, URLs canónicas, Open G
    - Enquanto estiver vazio, os formulários abrem o programa de e-mail do visitante com a mensagem pré-preenchida.
    - `BOOKING`: dias e horários disponíveis para marcações.
 4. **Conteúdos reais** — o site já não contém equipa, testemunhos, números nem preços inventados.
-   - **Portfolio**: 3 sites reais (Digital Réseau, Les Bras Cassés, Broken Arms). Falta acrescentar uma descrição e uma captura de ecrã de cada um.
+   - **Portfolio**: 4 sites reais (Digital Réseau, Les Bras Cassés, Broken Arms, Pratik Informatique). Falta acrescentar uma descrição e uma captura de ecrã de cada um.
    - **Avisos Google**: o bloco "Avis clients" aponta para a ficha Google. Os textos dos avisos reais podem ser acrescentados e aparecem automaticamente.
    - **À propos**: falta acrescentar o seu percurso (anos de experiência, formação) e uma foto para substituir o avatar "PDC".
    - **A validar**: as promessas de serviço (resposta em 24 h, auditoria gratuita, conteúdo das fórmulas na página Services).
