@@ -681,3 +681,43 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* Carte Google Maps (page contact) */
 .map-embed { border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--line); background: var(--blue-100); height: clamp(320px, 38vw, 480px); }
 .map-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* ---------- Portfolio : cadre navigateur ---------- */
+.browser { display: block; aspect-ratio: auto; background: var(--navy-800); border-bottom: 1px solid var(--line); }
+.browser-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #f3f6f8; border-bottom: 1px solid var(--line); }
+.browser-bar i { width: 10px; height: 10px; border-radius: 50%; background: #d5dde3; }
+.browser-bar i:nth-child(1) { background: #ff6a5a; }
+.browser-bar i:nth-child(2) { background: #f7c948; }
+.browser-bar i:nth-child(3) { background: var(--green); }
+.browser-bar span { margin-left: 10px; flex: 1; background: #fff; border-radius: 999px; padding: 3px 12px; font-size: .78rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.browser-screen { aspect-ratio: 16/10; overflow: hidden; position: relative; }
+.browser-screen img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .7s var(--ease); }
+.project:hover .browser-screen img { transform: scale(1.04); }
+.browser-placeholder { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 6px; color: #fff;
+  background: radial-gradient(400px 220px at 80% 0%, rgba(92,225,230,.45), transparent 60%), radial-gradient(400px 220px at 0% 100%, rgba(143,221,110,.35), transparent 60%), linear-gradient(140deg, var(--navy-700), var(--navy-900)); }
+.browser-placeholder span { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; letter-spacing: -.02em; }
+.browser-placeholder small { color: #a8e6ee; font-size: .9rem; }
+.project-body .link-arrow { margin-top: auto; }
+
+/* ---------- Avis Google ---------- */
+.reviews-cta { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; max-width: 980px; margin: 0 auto; padding: 32px 36px; border-radius: var(--radius-xl); background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.reviews-cta h3 { margin-bottom: 6px; }
+.reviews-cta p { margin: 0; color: var(--muted); }
+.reviews-g { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; background: var(--blue-50); }
+.reviews-g svg { width: 34px; height: 34px; }
+.reviews-g--sm { width: 48px; height: 48px; border-radius: 14px; background: #fff; box-shadow: var(--shadow-sm); }
+.reviews-g--sm svg { width: 26px; height: 26px; }
+a.hero-proof { color: inherit; }
+a.hero-proof:hover strong { color: var(--blue-600); }
+.testimonial .google-g { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--blue-50); }
+.testimonial .google-g svg { width: 22px; height: 22px; }
+
+/* ---------- À propos : carte interlocuteur ---------- */
+.owner-card { display: grid; grid-template-columns: 300px 1fr; gap: 48px; align-items: center; max-width: 1000px; margin: 0 auto; padding: 36px; border-radius: var(--radius-xl); background: var(--blue-50); }
+.owner-card img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+.owner-role { color: var(--orange-600); font-weight: 700; }
+@media (max-width: 760px) {
+  .reviews-cta { grid-template-columns: 1fr; text-align: center; justify-items: center; padding: 28px 22px; }
+  .owner-card { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .owner-card img { max-width: 260px; }
+}

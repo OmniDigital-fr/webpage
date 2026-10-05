@@ -28,7 +28,11 @@ SEO incluído: títulos e meta descriptions por página, URLs canónicas, Open G
    - `FORM_ENDPOINT`: crie um formulário gratuito em [formspree.io](https://formspree.io) e cole o URL (`https://formspree.io/f/xxxx`). Os pedidos de orçamento, marcações e newsletter chegam ao seu e-mail.
    - Enquanto estiver vazio, os formulários abrem o programa de e-mail do visitante com a mensagem pré-preenchida.
    - `BOOKING`: dias e horários disponíveis para marcações.
-4. **Conteúdos de exemplo** — os projetos do portfolio, testemunhos, os outros membros da equipa (além de Paulo Da Costa), estatísticas (150+ projetos, 4,9/5…) e preços são **exemplos ilustrativos**: substitua-os pelos seus dados reais.
+4. **Conteúdos reais** — o site já não contém equipa, testemunhos, números nem preços inventados.
+   - **Portfolio**: 3 sites reais (Digital Réseau, Les Bras Cassés, Broken Arms). Falta acrescentar uma descrição e uma captura de ecrã de cada um.
+   - **Avisos Google**: o bloco "Avis clients" aponta para a ficha Google. Os textos dos avisos reais podem ser acrescentados e aparecem automaticamente.
+   - **À propos**: falta acrescentar o seu percurso (anos de experiência, formação) e uma foto para substituir o avatar "PDC".
+   - **A validar**: as promessas de serviço (resposta em 24 h, auditoria gratuita, conteúdo das fórmulas na página Services).
 5. **Menções legais** — completar os campos `[à compléter]` (forma jurídica, SIRET, alojamento…).
 6. **Redes sociais** — links LinkedIn / Facebook / Instagram no rodapé.
 
