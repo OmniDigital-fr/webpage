@@ -721,3 +721,4 @@ a.hero-proof:hover strong { color: var(--blue-600); }
   .owner-card { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
   .owner-card img { max-width: 260px; }
 }
+.project-kind { align-self: flex-start; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--blue-600); background: var(--blue-100); padding: 4px 10px; border-radius: 8px; margin-bottom: 12px; }
