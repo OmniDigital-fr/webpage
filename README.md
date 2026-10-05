@@ -36,6 +36,30 @@ SEO incluído: títulos e meta descriptions por página, URLs canónicas, Open G
 5. **Menções legais** — completar os campos `[à compléter]` (forma jurídica, SIRET, alojamento…).
 6. **Redes sociais** — links LinkedIn / Facebook / Instagram no rodapé.
 
+## Editar o conteúdo (gerador `_src/`)
+
+As páginas HTML são geradas por um pequeno script Python, para que o cabeçalho, o rodapé e os blocos repetidos fiquem iguais em todas as páginas. **Edite os ficheiros em `_src/` e depois regenere o site**:
+
+```bash
+python3 _src/build.py
+```
+
+| Ficheiro | Conteúdo |
+|---|---|
+| `_src/common.py` | Contactos (nome, telefone, morada, link Google), cabeçalho, rodapé, ícones |
+| `_src/data.py` | Projetos do portfolio, avaliações Google, lista dos artigos do blog |
+| `_src/pages.py` | Textos das páginas (Accueil, Services, Portfolio, À propos, Contact, Rendez-vous, Blog, Mentions légales, 404) |
+| `_src/parts.py` | Blocos reutilizados (cartões, avaliações, FAQ) |
+| `_src/articles.py` | Texto completo dos artigos do blog |
+
+O estilo (`assets/css/style.css`) e os scripts (`assets/js/main.js`) editam-se diretamente.
+
+**Acrescentar avaliações Google:** em `_src/data.py`, preencha `TESTIMONIALS` com os textos reais, por exemplo `dict(text="…", name="Prénom N.", stars=5)`, e regenere. Os cartões aparecem automaticamente por cima do botão "Lire les avis sur Google".
+
+**Acrescentar um projeto ao portfolio:** acrescente uma entrada em `PROJECTS` (`_src/data.py`) e a captura de ecrã em `assets/img/portfolio/`.
+
+A pasta `_src/` não precisa de ser enviada para o alojamento.
+
 ## Logótipo
 
 - `assets/img/logo-omni-digital.png` — logótipo completo (fundo transparente), usado no rodapé.
@@ -55,7 +79,7 @@ As fotografias são imagens reais do [Unsplash](https://unsplash.com) (licença 
 
 ## Publicação
 
-Basta enviar todos os ficheiros para qualquer alojamento web (OVH, o2switch, Netlify, Vercel, GitHub Pages…). Não há nenhuma etapa de compilação.
+Basta enviar os ficheiros para qualquer alojamento web (OVH, o2switch, Hostinger, Netlify…), exceto a pasta `_src/` e o `README.md`. Os ficheiros HTML já estão gerados no repositório.
 
 Para testar localmente:
 
