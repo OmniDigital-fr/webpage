@@ -152,7 +152,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .nav { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); gap: 24px; }
 .logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 800; font-size: 1.32rem; color: var(--ink); letter-spacing: -.02em; }
 .logo:hover { color: var(--ink); }
-.logo img { width: 40px; height: 40px; }
+.logo img { height: 70px; width: auto; }
 .logo b { color: var(--blue-500); font-weight: 800; }
 .nav-menu { display: flex; align-items: center; gap: 4px; list-style: none; margin: 0; padding: 0; }
 .nav-menu a {
@@ -301,12 +301,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ---------- Stats ---------- */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .stat { text-align: center; padding: 30px 16px; border-radius: var(--radius-lg); background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); }
-.stat strong { display: block; font-family: var(--font-display); font-size: clamp(2.3rem, 4vw, 3.3rem); font-weight: 800; color: #fff; line-height: 1.1; }
+.stat strong { display: flex; justify-content: center; align-items: baseline; gap: .04em; font-family: var(--font-display); font-size: clamp(2.3rem, 4vw, 3.1rem); font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 8px; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.stat strong span, .stat strong em { font-size: 1em; font-weight: 800; color: inherit; }
 .stat strong em { font-style: normal; color: var(--orange-400); }
-.stat span { color: #a9b9da; font-size: .97rem; }
+.stat strong .pre { color: var(--orange-400); }
+.stat > span { display: block; color: #a9b9da; font-size: .97rem; }
 .stats--light .stat { background: #fff; border-color: var(--line); }
 .stats--light .stat strong { color: var(--ink); }
-.stats--light .stat span { color: var(--muted); }
+.stats--light .stat > span { color: var(--muted); }
 
 /* ---------- Process ---------- */
 .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; counter-reset: step; position: relative; }
@@ -544,6 +546,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .site-footer { background: var(--navy-900); color: #9fb0d2; padding-top: 80px; font-size: .97rem; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 48px; padding-bottom: 56px; }
 .site-footer .logo { color: #fff; margin-bottom: 18px; }
+.logo--footer { background: #fff; border-radius: var(--radius-lg); padding: 10px; }
+.logo--footer img { height: 150px; width: auto; }
 .site-footer .logo b { color: var(--blue-400); }
 .site-footer h4 { color: #fff; font-size: 1rem; margin-bottom: 20px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
@@ -658,7 +662,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   h1 { font-size: 2.15rem; }
   .nav { gap: 12px; }
   .logo { font-size: 1.15rem; }
-  .logo img { width: 34px; height: 34px; }
+  .logo img { height: 50px; }
   .nav-cta .btn-primary { padding: 10px 14px; font-size: .85rem; }
 }
 @media (max-width: 400px) {

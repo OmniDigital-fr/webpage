@@ -32,6 +32,12 @@ SEO incluído: títulos e meta descriptions por página, URLs canónicas, Open G
 5. **Menções legais** — completar os campos `[à compléter]` (forma jurídica, SIRET, alojamento…).
 6. **Redes sociais** — links LinkedIn / Facebook / Instagram no rodapé.
 
+## Logótipo
+
+- `assets/img/logo-omni-digital.png` — logótipo completo (fundo transparente), usado no rodapé.
+- `assets/img/logo-omni-digital-h.png` — versão horizontal recortada à volta de "Omni Digital", usada no cabeçalho para ficar legível em tamanho pequeno.
+- `assets/img/favicon.png` e `apple-touch-icon.png` — ícones do separador e do ecrã inicial do telemóvel.
+
 ## Imagens
 
 As fotografias são imagens reais do [Unsplash](https://unsplash.com) (licença gratuita, uso comercial permitido), carregadas diretamente do CDN do Unsplash. Para melhor desempenho e autenticidade, recomenda-se substituí-las progressivamente por fotos reais da equipa e dos seus projetos (colocá-las em `assets/img/`).
