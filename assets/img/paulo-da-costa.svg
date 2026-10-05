@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" role="img" aria-label="Paulo Da Costa">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff"/><stop offset="1" stop-color="#0b1f44"/></linearGradient></defs>
+  <rect width="600" height="660" fill="url(#g)"/>
+  <circle cx="470" cy="120" r="46" fill="#ff7a1a"/>
+  <text x="300" y="380" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-weight="800" font-size="190" fill="#fff" letter-spacing="-6">PDC</text>
+</svg>

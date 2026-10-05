@@ -22,14 +22,14 @@ SEO incluído: títulos e meta descriptions por página, URLs canónicas, Open G
 
 ## ⚠️ A personalizar antes de publicar
 
-1. **Contactos** — telefone `+33 6 00 00 00 00` e e-mail `contact@omnidigital.fr` (pesquisar e substituir em todos os ficheiros).
+1. **Contactos** — ✅ já configurados: Paulo Da Costa · `contact@omnidigital.fr` · 06 78 00 59 83 · 25 Rue Jean d'Estienne d'Orves, 94170 Le Perreux-sur-Marne.
 2. **Domínio** — `https://www.omnidigital.fr` em `<link rel="canonical">`, `sitemap.xml` e `robots.txt`.
 3. **Formulários** — em `assets/js/main.js`, no topo (`OMNI_CONFIG`):
    - `FORM_ENDPOINT`: crie um formulário gratuito em [formspree.io](https://formspree.io) e cole o URL (`https://formspree.io/f/xxxx`). Os pedidos de orçamento, marcações e newsletter chegam ao seu e-mail.
    - Enquanto estiver vazio, os formulários abrem o programa de e-mail do visitante com a mensagem pré-preenchida.
    - `BOOKING`: dias e horários disponíveis para marcações.
-4. **Conteúdos de exemplo** — os projetos do portfolio, testemunhos, nomes da equipa, estatísticas (150+ projetos, 4,9/5…) e preços são **exemplos ilustrativos**: substitua-os pelos seus dados reais.
-5. **Menções legais** — completar os campos `[à compléter]` (SIRET, morada, alojamento…).
+4. **Conteúdos de exemplo** — os projetos do portfolio, testemunhos, os outros membros da equipa (além de Paulo Da Costa), estatísticas (150+ projetos, 4,9/5…) e preços são **exemplos ilustrativos**: substitua-os pelos seus dados reais.
+5. **Menções legais** — completar os campos `[à compléter]` (forma jurídica, SIRET, alojamento…).
 6. **Redes sociais** — links LinkedIn / Facebook / Instagram no rodapé.
 
 ## Imagens
