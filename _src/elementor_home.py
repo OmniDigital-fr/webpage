@@ -177,7 +177,7 @@ def header():
     logo = image("logo_h", "od-logo", link=URL["home"])
     nav = widget("nav-menu", font({
         "menu": MENU_SLUG, "layout": "horizontal", "align_items": "center", "pointer": "underline",
-        "animation_line": "fade", "dropdown": "tablet", "toggle": "burger", "full_width": "stretch",
+        "animation_line": "fade", "dropdown": "tablet", "toggle": "burger", "toggle_align": "right", "full_width": "stretch",
         "color_menu_item": "#0C1D2E", "color_menu_item_hover": "#0A6AA8", "pointer_color_menu_item_hover": "#DC3A2C",
         "color_menu_item_active": "#0A6AA8", "pointer_color_menu_item_active": "#DC3A2C",
         "padding_horizontal_menu_item": px(12), "toggle_color": "#0C1D2E", "toggle_size": px(26),
@@ -277,7 +277,7 @@ def why():
 def engagements():
     stats = [(24, "", "h", "pour vous répondre (jours ouvrés)"), (1, "", "", "interlocuteur unique, du début à la fin"),
              (0, "", "€", "pour l'audit et le premier échange"), (100, "", "%", "propriétaire de votre site et de vos contenus")]
-    cards = [widget("counter", font(font({"starting_number": 0, "ending_number": n, "prefix": pre, "suffix": suf, "title": t,
+    cards = [widget("counter", font(font({"starting_number": n, "ending_number": n, "duration": 0, "prefix": pre, "suffix": suf, "title": t,
                                           "thousand_separator": ""}, HEAD_FONT, 800, "typography_number"), BODY_FONT, 400, "typography_title"),
                     "od-stat") for n, pre, suf, t in stats]
     return section("od-engagements od-navy", [

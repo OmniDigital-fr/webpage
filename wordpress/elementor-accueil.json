@@ -232,6 +232,7 @@
       "animation_line": "fade",
       "dropdown": "tablet",
       "toggle": "burger",
+      "toggle_align": "right",
       "full_width": "stretch",
       "color_menu_item": "#0C1D2E",
       "color_menu_item_hover": "#0A6AA8",
@@ -1959,8 +1960,9 @@
        "elType": "widget",
        "widgetType": "counter",
        "settings": {
-        "starting_number": 0,
+        "starting_number": 24,
         "ending_number": 24,
+        "duration": 0,
         "prefix": "",
         "suffix": "h",
         "title": "pour vous répondre (jours ouvrés)",
@@ -1980,8 +1982,9 @@
        "elType": "widget",
        "widgetType": "counter",
        "settings": {
-        "starting_number": 0,
+        "starting_number": 1,
         "ending_number": 1,
+        "duration": 0,
         "prefix": "",
         "suffix": "",
         "title": "interlocuteur unique, du début à la fin",
@@ -2003,6 +2006,7 @@
        "settings": {
         "starting_number": 0,
         "ending_number": 0,
+        "duration": 0,
         "prefix": "",
         "suffix": "€",
         "title": "pour l'audit et le premier échange",
@@ -2022,8 +2026,9 @@
        "elType": "widget",
        "widgetType": "counter",
        "settings": {
-        "starting_number": 0,
+        "starting_number": 100,
         "ending_number": 100,
+        "duration": 0,
         "prefix": "",
         "suffix": "%",
         "title": "propriétaire de votre site et de vos contenus",
