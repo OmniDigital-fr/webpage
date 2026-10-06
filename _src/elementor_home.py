@@ -184,7 +184,7 @@ def header():
         "color_dropdown_item": "#0C1D2E", "background_color_dropdown_item": "#FFFFFF",
         "color_dropdown_item_hover": "#0A6AA8", "background_color_dropdown_item_hover": "#F0F9FD",
         "color_dropdown_item_active": "#0A6AA8", "background_color_dropdown_item_active": "#F0F9FD",
-        "menu_typography_font_size": px(16),
+        "menu_typography_font_size": px(16), "_flex_size": "grow",
     }, BODY_FONT, 600, "menu_typography"), "od-nav")
     rdv = button("Prendre RDV", URL["rdv"], "outline", cls="od-btn--sm")
     rdv["settings"]["hide_tablet"] = "hidden-tablet"
@@ -407,7 +407,8 @@ selector { --od-ink:#0C1D2E; --od-text:#435866; --od-muted:#5B6F7C; --od-line:#E
   --od-coral-light:#FF6A5A; --od-coral-tint:#FFEAE7; --od-cyan:#5CE1E6; --od-green:#8FDD6E; --od-grad:linear-gradient(120deg,#5CE1E6,#8FDD6E);
   --od-shadow:0 10px 30px -12px rgba(10,37,64,.18); --od-shadow-lg:0 30px 60px -20px rgba(10,37,64,.28); }
 selector, selector .elementor-widget-text-editor { color: var(--od-text); font-family: "Inter", sans-serif; font-size: 17px; line-height: 1.7; }
-selector .elementor-heading-title { color: var(--od-ink); letter-spacing: -0.02em; line-height: 1.15; }
+selector .elementor-heading-title { color: var(--od-ink); letter-spacing: -0.02em; }
+selector .elementor-widget-heading .elementor-heading-title { line-height: 1.15; }
 selector h1.elementor-heading-title { font-size: clamp(2.2rem, 4.2vw, 3.4rem); margin-bottom: 22px; }
 selector h2.elementor-heading-title { font-size: clamp(1.9rem, 3.4vw, 2.8rem); margin-bottom: 14px; }
 selector h3.elementor-heading-title { font-size: 1.3rem; font-weight: 700; margin: 0 0 10px; }
@@ -457,6 +458,7 @@ selector .od-header { border-bottom: 1px solid var(--od-line); z-index: 50; }
 selector .od-logo img { height: 66px; width: auto; }
 selector .od-nav { flex: 1 1 auto; width: auto; min-width: 0; }
 selector .od-header .elementor-nav-menu--main .elementor-item { white-space: nowrap; }
+selector .od-header .elementor-nav-menu--main > .elementor-nav-menu { flex-wrap: nowrap; }
 @media (max-width: 767px) { selector .od-logo img { height: 50px; } selector .od-topbar .elementor-icon-list-item:not(:first-child) { display: none; } }
 
 /* Hero */
