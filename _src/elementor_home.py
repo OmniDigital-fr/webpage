@@ -375,11 +375,11 @@ def footer():
         image("logo_full", "od-footer-logo", link=URL["home"]),
         text("<p>Agence web dédiée aux PME : création de sites internet, référencement naturel (SEO) et accompagnement "
              "à la transformation digitale pour générer plus de contacts.</p>"),
-    ], gap=0, width=30)
+    ], gap=0, width=28)
 
     def links(title, items):
         return con("od-foot-col", [heading(title, "h4"), icon_list([(t, "fas fa-angle-right", u) for t, u in items], cls="od-foot-links")],
-                   gap=0, width=20)
+                   gap=0, width=18)
 
     col2 = links("Services", [("Création de site web", URL["services"]), ("Référencement SEO", URL["services"]),
                               ("SEO local & Google Maps", URL["services"]), ("Refonte & optimisation", URL["services"]),
@@ -389,7 +389,7 @@ def footer():
     col4 = con("od-foot-col", [heading("Contact", "h4"), icon_list([
         (CONTACT_NAME, "fas fa-user"), (f"{STREET}, {POSTCODE} {CITY}", "fas fa-map-marker-alt", URL["maps"]),
         (PHONE, "fas fa-phone-alt", "tel:" + PHONE_LINK), (EMAIL, "fas fa-envelope", "mailto:" + EMAIL)], cls="od-foot-contact")],
-        gap=0, width=26)
+        gap=0, width=24)
     top = con("od-foot-top", [col1, col2, col3, col4], direction="row", wrap=True, gap=40, justify="space-between",
               flex_direction_mobile="column")
     bottom = con("od-foot-bottom", [
@@ -408,7 +408,7 @@ selector { --od-ink:#0C1D2E; --od-text:#435866; --od-muted:#5B6F7C; --od-line:#E
   --od-shadow:0 10px 30px -12px rgba(10,37,64,.18); --od-shadow-lg:0 30px 60px -20px rgba(10,37,64,.28); }
 selector, selector .elementor-widget-text-editor { color: var(--od-text); font-family: "Inter", sans-serif; font-size: 17px; line-height: 1.7; }
 selector .elementor-heading-title { color: var(--od-ink); letter-spacing: -0.02em; line-height: 1.15; }
-selector h1.elementor-heading-title { font-size: clamp(2.3rem, 4.8vw, 3.9rem); margin-bottom: 22px; }
+selector h1.elementor-heading-title { font-size: clamp(2.2rem, 4.2vw, 3.4rem); margin-bottom: 22px; }
 selector h2.elementor-heading-title { font-size: clamp(1.9rem, 3.4vw, 2.8rem); margin-bottom: 14px; }
 selector h3.elementor-heading-title { font-size: 1.3rem; font-weight: 700; margin: 0 0 10px; }
 selector .elementor-widget-text-editor p:last-child { margin-bottom: 0; }
@@ -432,7 +432,7 @@ selector .od-navy .elementor-heading-title { color: #fff; }
 selector .od-navy .od-lead p { color: #A3C0CF; }
 
 /* Boutons */
-selector .od-btn .elementor-button { border-radius: 999px; padding: 15px 28px; font-size: 16px; line-height: 1; border: 2px solid transparent;
+selector .od-btn .elementor-button { border-radius: 999px; padding: 15px 28px; font-size: 16px; line-height: 1; border: 2px solid transparent; text-transform: none; letter-spacing: normal; font-family: "Inter", sans-serif; font-weight: 700;
   transition: transform .25s, box-shadow .25s, background-color .2s, color .2s, border-color .2s; }
 selector .od-btn--sm .elementor-button { padding: 11px 20px; font-size: 15px; }
 selector .od-btn--lg .elementor-button { padding: 19px 32px; font-size: 17px; }
@@ -455,7 +455,8 @@ selector .od-topbar .elementor-icon-list-text { color: #DCEBF2; }
 selector .od-topbar a:hover, selector .od-topbar a:hover .elementor-icon-list-text { color: #fff; }
 selector .od-header { border-bottom: 1px solid var(--od-line); z-index: 50; }
 selector .od-logo img { height: 66px; width: auto; }
-selector .od-nav { flex: 1; }
+selector .od-nav { flex: 1 1 auto; width: auto; min-width: 0; }
+selector .od-header .elementor-nav-menu--main .elementor-item { white-space: nowrap; }
 @media (max-width: 767px) { selector .od-logo img { height: 50px; } selector .od-topbar .elementor-icon-list-item:not(:first-child) { display: none; } }
 
 /* Hero */
