@@ -457,6 +457,8 @@ selector .od-topbar a:hover, selector .od-topbar a:hover .elementor-icon-list-te
 selector .od-header { border-bottom: 1px solid var(--od-line); z-index: 50; }
 selector .od-logo img { height: 66px; width: auto; }
 selector .od-nav { flex: 1 1 auto; width: auto; min-width: 0; }
+selector .od-header-actions { --width: auto; width: auto; flex: 0 0 auto; }
+selector .od-logo { flex: 0 0 auto; }
 selector .od-header .elementor-nav-menu--main .elementor-item { white-space: nowrap; }
 selector .od-header .elementor-nav-menu--main > .elementor-nav-menu { flex-wrap: nowrap; }
 @media (max-width: 767px) { selector .od-logo img { height: 50px; } selector .od-topbar .elementor-icon-list-item:not(:first-child) { display: none; } }
