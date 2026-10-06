@@ -21,9 +21,25 @@ PROJECTS = [
               "services, zones d'intervention, demande de rendez-vous et appel en un clic."),
 ]
 
-# Avis clients — à remplir UNIQUEMENT avec de vrais avis Google (texte copié tel quel).
-# Exemple : dict(text="…", name="Prénom N.", stars=5)
-TESTIMONIALS = []
+# Avis clients — UNIQUEMENT de vrais avis Google, texte copié tel quel
+# (source : fiche Google « Omni Digital », importée par l'extension Trustindex du WordPress, avril 2026).
+TESTIMONIALS = [
+    dict(name="Paulo A.", stars=5,
+         text="Très satisfait du travail d’Omni Digital.\nSite moderne, rapide et professionnel.\n"
+              "On sent une vraie expertise en marketing et pas seulement en design.\nJe recommande sans hésiter."),
+    dict(name="David P.", stars=5,
+         text="Créateur de site web très compétent toujours à l'écoute pour modifier des pages ou la structure de votre site. "
+              "Mon site https://pratik-informatique.fr a été réalisé dans un temps assez rapide me permettant de le présenter "
+              "à ma clientèle pour prospecter.\nN'hésitez pas à faire appel à cette société pour une refonte de votre site ou "
+              "tout simplement pour la création.\nProfessionnel à l'écoute tout ce que je recherche et généralement tout ce que "
+              "tout le monde recherche."),
+    dict(name="Or Tel SAV", stars=5,
+         text="Nous avons sollicité Omni Digital pour obtenir des conseils ainsi que plusieurs améliorations sur notre site internet, "
+              "et tout s’est déroulé parfaitement du début à la fin.\n\nL’équipe a su être à l’écoute, réactive et très "
+              "professionnelle. Nous ne regrettons absolument pas d’avoir travaillé avec Omni Digital, surtout au vu du "
+              "professionnalisme et du savoir-faire de Paulo.\n\nUne société sérieuse, compétente et impliquée, que nous "
+              "recommandons sans hésitation."),
+]
 
 # Articles du blog
 POSTS = [

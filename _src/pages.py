@@ -36,7 +36,7 @@ SERVICES = [
 def home():
     root = ""
     out = head("Omni Digital — Agence web & SEO pour PME | Création de sites et référencement Google",
-               "Omni Digital crée et optimise des sites internet qui attirent des clients. Création de site, référencement SEO, SEO local et transformation digitale pour PME. Audit gratuit.",
+               "Omni Digital crée et optimise des sites internet qui attirent des clients : création de site, SEO, SEO local et transformation digitale pour PME.",
                "index.html", jsonld=[ORG_LD, faq_jsonld(FAQ_HOME)])
     out += header("index.html")
     out += f"""
@@ -53,7 +53,7 @@ def home():
       </div>
       <a class="hero-proof reveal reveal-d3" href="{GOOGLE_REVIEWS_URL}" target="_blank" rel="noopener">
         <span class="reviews-g reviews-g--sm">{I["google"]}</span>
-        <div><strong>Avis clients vérifiables</strong><small>Consultez nos avis sur Google →</small></div>
+        <div><strong>5,0/5 sur Google</strong><small>Lire les {len(TESTIMONIALS)} avis de nos clients →</small></div>
       </a>
     </div>
     <div class="hero-visual reveal reveal-d2">
@@ -299,7 +299,7 @@ def portfolio():
 
 def about():
     out = head("À propos — Paulo Da Costa, votre interlocuteur web & SEO | Omni Digital",
-               "Omni Digital, c'est Paulo Da Costa : un interlocuteur unique pour créer votre site internet, le référencer sur Google et accompagner votre PME dans le digital. Basé au Perreux-sur-Marne.",
+               "Omni Digital, c'est Paulo Da Costa : un interlocuteur unique pour créer votre site, le référencer sur Google et digitaliser votre PME. Le Perreux-sur-Marne.",
                "a-propos.html", jsonld=[ORG_LD])
     out += header("a-propos.html")
     out += "<main id=\"main\">" + page_hero("À propos", "Le digital au service <span class=\"hl-orange\">des PME</span>, tout simplement",
@@ -377,7 +377,7 @@ def about():
 
 def contact():
     out = head("Contact — Parlons de votre projet web | Omni Digital",
-               "Contactez Omni Digital pour échanger sur votre projet de site internet, de référencement SEO ou de transformation digitale. Premier conseil offert, réponse sous 24 h ouvrées.",
+               "Contactez Omni Digital pour échanger sur votre projet de site internet, de SEO ou de transformation digitale. Premier conseil offert, réponse sous 24 h.",
                "contact.html", jsonld=[ORG_LD])
     out += header("contact.html")
     out += "<main id=\"main\">" + page_hero("Contact", "Parlons de votre projet <span class=\"hl-orange\">dès aujourd'hui</span>",
@@ -622,7 +622,7 @@ def legal():
 
 
 def notfound():
-    out = head("Page introuvable | Omni Digital", "La page demandée est introuvable.", "404.html", root="/")
+    out = head("Page introuvable | Omni Digital", "La page demandée est introuvable. Retrouvez nos services de création de sites et de SEO pour PME.", "404.html", root="/")
     out = out.replace('<meta name="robots" content="index, follow">', '<meta name="robots" content="noindex">')
     out += header("", root="/")
     out += f"""

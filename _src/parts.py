@@ -28,7 +28,7 @@ def testimonial_card(t, delay=""):
     return f"""
       <figure class="testimonial reveal{delay}" style="margin:0">
         <div style="display:flex;justify-content:space-between;align-items:center"><span class="quote-mark">{I['quote']}</span><span class="stars" aria-label="{t.get('stars', 5)} étoiles sur 5">{stars}</span></div>
-        <blockquote>{t['text']}</blockquote>
+        <blockquote>{'<br>'.join(l for l in t['text'].split(chr(10)) if l.strip())}</blockquote>
         <figcaption class="who"><span class="google-g">{I['google']}</span><div><strong>{t['name']}</strong><span>Avis Google</span></div></figcaption>
       </figure>"""
 
@@ -46,8 +46,8 @@ def reviews_block(title="Ce que disent nos clients"):
     <div class="reviews-cta reveal">
       <span class="reviews-g">{I['google']}</span>
       <div>
-        <h3>Nos avis clients sont publics sur Google</h3>
-        <p>Pas de témoignages arrangés : consultez directement les avis laissés par nos clients sur notre fiche Google.</p>
+        <h3>{f"5,0/5 sur Google, {len(TESTIMONIALS)} avis" if TESTIMONIALS else "Nos avis clients sont publics sur Google"}</h3>
+        <p>Des avis publics et vérifiables, laissés par nos clients sur notre fiche Google.</p>
       </div>
       <a class="btn btn-primary" href="{GOOGLE_REVIEWS_URL}" target="_blank" rel="noopener">Lire les avis sur Google {I['arrow']}</a>
     </div>

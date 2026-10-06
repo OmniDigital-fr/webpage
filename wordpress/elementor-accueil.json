@@ -1,0 +1,5046 @@
+{
+ "title": "Accueil (nouvelle version)",
+ "template": "elementor_canvas",
+ "menu_slug": "omni-digital-navigation",
+ "menu": [
+  [
+   "Accueil",
+   "https://claude.omnidigital.fr/"
+  ],
+  [
+   "Services",
+   "https://claude.omnidigital.fr/services/"
+  ],
+  [
+   "Portfolio",
+   "https://claude.omnidigital.fr/portfolio/"
+  ],
+  [
+   "À propos",
+   "https://claude.omnidigital.fr/a-propos/"
+  ],
+  [
+   "Blog",
+   "https://claude.omnidigital.fr/blog/"
+  ],
+  [
+   "Contact",
+   "https://claude.omnidigital.fr/contact/"
+  ]
+ ],
+ "page_settings": {
+  "custom_css": "/* ===== Omni Digital : page d'accueil (styles complémentaires Elementor) ===== */\nselector { --od-ink:#0C1D2E; --od-text:#435866; --od-muted:#5B6F7C; --od-line:#E0EBF0; --od-tint:#F0F9FD; --od-blue:#0A6AA8;\n  --od-blue2:#0E86C6; --od-blue-light:#DCF2FA; --od-navy:#0A2540; --od-navy-deep:#061A2E; --od-coral:#DC3A2C; --od-coral-dark:#B92C21;\n  --od-coral-light:#FF6A5A; --od-coral-tint:#FFEAE7; --od-cyan:#5CE1E6; --od-green:#8FDD6E; --od-grad:linear-gradient(120deg,#5CE1E6,#8FDD6E);\n  --od-shadow:0 10px 30px -12px rgba(10,37,64,.18); --od-shadow-lg:0 30px 60px -20px rgba(10,37,64,.28); }\nselector, selector .elementor-widget-text-editor { color: var(--od-text); font-family: \"Inter\", sans-serif; font-size: 17px; line-height: 1.7; }\nselector .elementor-heading-title { color: var(--od-ink); letter-spacing: -0.02em; line-height: 1.15; }\nselector h1.elementor-heading-title { font-size: clamp(2.3rem, 4.8vw, 3.9rem); margin-bottom: 22px; }\nselector h2.elementor-heading-title { font-size: clamp(1.9rem, 3.4vw, 2.8rem); margin-bottom: 14px; }\nselector h3.elementor-heading-title { font-size: 1.3rem; font-weight: 700; margin: 0 0 10px; }\nselector .elementor-widget-text-editor p:last-child { margin-bottom: 0; }\nselector .od-hl { color: var(--od-blue2); }\nselector .od-hl-underline { background: linear-gradient(transparent 62%, rgba(92,225,230,.5) 62%); padding: 0 .1em; }\nselector a { transition: color .2s; }\n\n/* Pastille de section */\nselector .od-eyebrow .elementor-heading-title { display: inline-flex; align-items: center; gap: 8px; font-size: .8rem; letter-spacing: .14em;\n  text-transform: uppercase; color: var(--od-blue); background: var(--od-blue-light); padding: 7px 14px; border-radius: 999px; margin-bottom: 18px; line-height: 1.2; }\nselector .od-eyebrow .elementor-heading-title::before { content: \"\"; width: 8px; height: 8px; border-radius: 50%; background: var(--od-grad); box-shadow: 0 0 0 3px rgba(92,225,230,.2); }\nselector .od-navy .od-eyebrow .elementor-heading-title { background: rgba(255,255,255,.08); color: #A8E6EE; }\nselector .od-section-head { max-width: 760px; margin-bottom: 52px; }\nselector .od-section-head.od-center { margin-left: auto; margin-right: auto; text-align: center; align-items: center; }\nselector .od-lead p { font-size: 1.12rem; color: var(--od-muted); }\n\n/* Sections */\nselector .od-tint { background: var(--od-tint); }\nselector .od-navy { background: var(--od-navy); }\nselector .od-navy .elementor-heading-title { color: #fff; }\nselector .od-navy .od-lead p { color: #A3C0CF; }\n\n/* Boutons */\nselector .od-btn .elementor-button { border-radius: 999px; padding: 15px 28px; font-size: 16px; line-height: 1; border: 2px solid transparent;\n  transition: transform .25s, box-shadow .25s, background-color .2s, color .2s, border-color .2s; }\nselector .od-btn--sm .elementor-button { padding: 11px 20px; font-size: 15px; }\nselector .od-btn--lg .elementor-button { padding: 19px 32px; font-size: 17px; }\nselector .od-btn--block, selector .od-btn--block .elementor-button { width: 100%; }\nselector .od-btn--arrow .elementor-button-text::after { content: \" →\"; }\nselector .od-btn--primary .elementor-button { background: var(--od-coral); color: #fff; box-shadow: 0 12px 24px -10px rgba(220,58,44,.55); }\nselector .od-btn--primary .elementor-button:hover { background: var(--od-coral-dark); color: #fff; transform: translateY(-2px); }\nselector .od-btn--outline .elementor-button { background: #fff; color: var(--od-ink); border-color: var(--od-line); }\nselector .od-btn--outline .elementor-button:hover { border-color: var(--od-blue2); color: var(--od-blue); transform: translateY(-2px); }\nselector .od-btn--ghost .elementor-button { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }\nselector .od-btn--ghost .elementor-button:hover { background: #fff; color: var(--od-navy); }\nselector .od-btn--link .elementor-button { background: none; padding: 0; color: var(--od-blue); box-shadow: none; }\nselector .od-btn--link .elementor-button-text::after { content: \" →\"; }\nselector .od-btn--link .elementor-button:hover { color: var(--od-coral); }\n\n/* Barre du haut & en-tête */\nselector .od-topbar, selector .od-topbar a { color: #DCEBF2; font-size: 14px; }\nselector .od-topbar .elementor-icon-list-icon i, selector .od-topbar .elementor-icon-list-icon svg { color: var(--od-coral-light); fill: var(--od-coral-light); font-size: 13px; }\nselector .od-topbar .elementor-icon-list-text { color: #DCEBF2; }\nselector .od-topbar a:hover, selector .od-topbar a:hover .elementor-icon-list-text { color: #fff; }\nselector .od-header { border-bottom: 1px solid var(--od-line); z-index: 50; }\nselector .od-logo img { height: 66px; width: auto; }\nselector .od-nav { flex: 1; }\n@media (max-width: 767px) { selector .od-logo img { height: 50px; } selector .od-topbar .elementor-icon-list-item:not(:first-child) { display: none; } }\n\n/* Hero */\nselector .od-hero { background: radial-gradient(900px 500px at 85% -10%, rgba(92,225,230,.28), transparent 60%),\n  radial-gradient(600px 400px at -10% 110%, rgba(143,221,110,.20), transparent 60%), linear-gradient(180deg,#fff 0%,var(--od-tint) 100%); }\nselector .od-hero-lead p { font-size: 1.2rem; max-width: 560px; margin-bottom: 30px; }\nselector .od-actions { margin-bottom: 34px; }\nselector .od-hero-proof { color: var(--od-text); }\nselector .od-hero-proof strong { color: var(--od-ink); }\nselector .od-hero-proof span { font-size: .92rem; color: var(--od-muted); }\nselector .od-hero-proof:hover strong { color: var(--od-blue); }\nselector .od-google-badge .elementor-icon { width: 48px; height: 48px; border-radius: 14px; background: #fff; box-shadow: 0 1px 2px rgba(10,37,64,.06), 0 2px 8px rgba(10,37,64,.05);\n  display: grid; place-items: center; font-size: 24px; color: #4285F4; fill: #4285F4; }\nselector .od-google-badge--lg .elementor-icon { width: 64px; height: 64px; border-radius: 18px; background: var(--od-tint); font-size: 32px; }\nselector .od-google-badge--sm .elementor-icon { width: 42px; height: 42px; border-radius: 50%; background: var(--od-tint); font-size: 20px; box-shadow: none; }\nselector .od-hero-visual { position: relative; }\nselector .od-hero-photo img { width: 100%; aspect-ratio: 4/4.3; object-fit: cover; border-radius: 32px; box-shadow: var(--od-shadow-lg); }\nselector .od-float { position: absolute !important; width: auto !important; background: #fff; border-radius: 16px; box-shadow: var(--od-shadow-lg);\n  padding: 14px 18px !important; z-index: 2; animation: od-floaty 6s ease-in-out infinite; }\nselector .od-float p { font-size: .82rem; color: var(--od-muted); line-height: 1.35; white-space: nowrap; }\nselector .od-float strong { font-family: \"Plus Jakarta Sans\", sans-serif; font-size: 1.2rem; color: var(--od-ink); }\nselector .od-float--a { left: -34px; top: 16%; }\nselector .od-float--b { right: -26px; bottom: 12%; animation-delay: -3s; }\nselector .od-float--c { right: 18px; top: -18px; animation-delay: -1.5s; }\nselector .od-float-ic .elementor-icon { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-size: 20px; }\nselector .od-ic--green .elementor-icon { background: #DCFCE7; color: #16A34A; fill: #16A34A; }\nselector .od-ic--coral .elementor-icon { background: var(--od-coral-tint); color: var(--od-coral-dark); fill: var(--od-coral-dark); }\nselector .od-ic--blue .elementor-icon { background: var(--od-blue-light); color: #4285F4; fill: #4285F4; }\n@keyframes od-floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }\n@media (prefers-reduced-motion: reduce) { selector .od-float { animation: none; } }\n@media (max-width: 1024px) { selector .od-hero-visual { max-width: 560px; margin: 0 auto; } selector .od-float--a { left: -10px; } selector .od-float--b { right: -6px; } }\n@media (max-width: 767px) { selector .od-float--c { display: none; } selector .od-float--a { left: 8px; top: 8px; } selector .od-float--b { right: 8px; bottom: 8px; }\n  selector .od-actions .od-btn, selector .od-actions .od-btn .elementor-button { width: 100%; } }\n\n/* Outils */\nselector .od-tools { border-bottom: 1px solid var(--od-line); }\nselector .od-tools-label p { text-align: center; font-size: .88rem; font-weight: 600; color: var(--od-muted); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 20px; }\nselector .od-tools-list .elementor-icon-list-items { justify-content: space-between; row-gap: 14px; }\nselector .od-tools-list .elementor-icon-list-text { font-family: \"Plus Jakarta Sans\", sans-serif; font-weight: 700; font-size: 1.05rem; color: #7C8B97; }\nselector .od-tools-list .elementor-icon-list-icon i, selector .od-tools-list .elementor-icon-list-icon svg { color: #9AA8B3; fill: #9AA8B3; font-size: 22px; }\n@media (max-width: 767px) { selector .od-tools-list .elementor-icon-list-items { justify-content: center; column-gap: 22px; } }\n\n/* Cartes */\nselector .od-card { background: #fff; border: 1px solid var(--od-line); border-radius: 24px; position: relative; overflow: hidden;\n  transition: transform .35s, box-shadow .35s, border-color .35s; }\nselector .od-card:hover { transform: translateY(-6px); box-shadow: var(--od-shadow); border-color: transparent; }\nselector .od-num .elementor-heading-title { position: absolute; top: 26px; right: 30px; font-size: 2.6rem; color: var(--od-blue-light); }\nselector .od-iconbox .elementor-icon { width: 60px; height: 60px; border-radius: 16px; display: grid; place-items: center; font-size: 26px; color: #fff; fill: #fff;\n  background: linear-gradient(135deg, #3BB8E0, var(--od-blue)); box-shadow: 0 10px 20px -8px rgba(10,106,168,.5); margin-bottom: 22px; }\nselector .od-iconbox--coral .elementor-icon { background: linear-gradient(135deg, var(--od-coral-light), var(--od-coral-dark)); box-shadow: 0 12px 24px -10px rgba(220,58,44,.55); }\nselector .od-iconbox { text-align: left; }\nselector .od-service ul { list-style: none; padding: 0; margin: 14px 0 22px; }\nselector .od-service li { padding: 5px 0 5px 28px; position: relative; font-size: .96rem; }\nselector .od-service li::before { content: \"✓\"; position: absolute; left: 0; top: 7px; width: 19px; height: 19px; border-radius: 50%; background: var(--od-blue-light);\n  color: var(--od-blue); font-size: 11px; font-weight: 800; display: grid; place-items: center; }\nselector .od-service .elementor-widget-button { margin-top: auto; }\n\n/* Pourquoi */\nselector .od-why-media { position: relative; }\nselector .od-photo img { width: 100%; aspect-ratio: 5/4; object-fit: cover; border-radius: 32px; box-shadow: var(--od-shadow-lg); }\nselector .od-badge { position: absolute !important; left: -24px; bottom: -24px; width: auto !important; max-width: 220px; background: var(--od-coral);\n  border-radius: 24px; box-shadow: 0 12px 24px -10px rgba(220,58,44,.55); }\nselector .od-badge .elementor-heading-title { color: #fff; font-size: 2.6rem; line-height: 1; }\nselector .od-badge p { color: #fff; font-weight: 600; font-size: .92rem; line-height: 1.4; }\nselector .od-checks { margin: 8px 0 30px; }\nselector .od-checks .elementor-icon-list-item { align-items: flex-start !important; padding-bottom: 12px !important; }\nselector .od-checks .elementor-icon-list-icon { width: 26px; height: 26px; min-width: 26px; border-radius: 50%; background: var(--od-coral-tint); display: grid !important; place-items: center; margin-top: 2px; }\nselector .od-checks .elementor-icon-list-icon i, selector .od-checks .elementor-icon-list-icon svg { color: var(--od-coral-dark); fill: var(--od-coral-dark); font-size: 12px; }\nselector .od-checks .elementor-icon-list-text { color: var(--od-text); padding-left: 12px; }\nselector .od-checks strong { color: var(--od-ink); }\n@media (max-width: 767px) { selector .od-badge { left: 12px; bottom: -20px; } }\n\n/* Engagements */\nselector .od-stat { flex: 1 1 22%; min-width: 200px; text-align: center; padding: 30px 16px; border-radius: 24px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); }\nselector .od-stat .elementor-counter-number-wrapper { color: #fff; font-family: \"Plus Jakarta Sans\", sans-serif; font-size: clamp(2.3rem, 4vw, 3.1rem); font-weight: 800; line-height: 1.1; justify-content: center; }\nselector .od-stat .elementor-counter-number-suffix { color: var(--od-coral-light); }\nselector .od-stat .elementor-counter-title { color: #A3C0CF; font-size: .97rem; line-height: 1.5; margin-top: 8px; }\n\n/* Méthode */\nselector .od-step { text-align: center; }\nselector .od-step-num .elementor-heading-title { width: 68px; height: 68px; margin: 0 auto 20px; border-radius: 50%; display: grid; place-items: center; font-size: 1.3rem;\n  color: var(--od-blue); background: #fff; border: 2px solid var(--od-blue-light); box-shadow: 0 1px 2px rgba(10,37,64,.06), 0 2px 8px rgba(10,37,64,.05); transition: .3s; }\nselector .od-step:hover .od-step-num .elementor-heading-title { background: var(--od-coral); color: #fff; border-color: var(--od-coral); transform: scale(1.08); }\nselector .od-step p { font-size: .97rem; }\n\n/* Portfolio */\nselector .od-head-row { margin-bottom: 44px; }\nselector .od-browser { background: var(--od-navy); }\nselector .od-browser-bar { background: #F3F6F8; border-bottom: 1px solid var(--od-line); padding: 10px 14px 10px 64px; position: relative; }\nselector .od-browser-bar::before { content: \"\"; position: absolute; left: 14px; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-radius: 50%;\n  background: #FF6A5A; box-shadow: 16px 0 0 #F7C948, 32px 0 0 #8FDD6E; }\nselector .od-browser-bar p { background: #fff; border-radius: 999px; padding: 2px 12px; font-size: .78rem; color: var(--od-muted); line-height: 1.6; }\nselector .od-browser-screen img { width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: top; display: block; transition: transform .7s; }\nselector .od-project:hover .od-browser-screen img { transform: scale(1.04); }\nselector .od-browser-screen { overflow: hidden; }\nselector .od-kind .elementor-heading-title { display: inline-block; font-family: \"Inter\", sans-serif; font-size: .74rem; font-weight: 700; text-transform: uppercase;\n  letter-spacing: .08em; color: var(--od-blue); background: var(--od-blue-light); padding: 4px 10px; border-radius: 8px; margin-bottom: 12px; }\nselector .od-project-body p { font-size: .97rem; margin-bottom: 16px; }\n\n/* Avis */\nselector .od-review { justify-content: space-between; }\nselector .od-quote .elementor-icon { color: var(--od-coral); fill: var(--od-coral); font-size: 30px; }\nselector .od-stars p { color: #FBBF24; letter-spacing: 2px; }\nselector .od-review-text p { color: var(--od-ink); font-size: 1rem; margin: 16px 0 12px; }\nselector .od-review-who p { line-height: 1.4; }\nselector .od-review-who strong { color: var(--od-ink); }\nselector .od-review-who span { font-size: .88rem; color: var(--od-muted); }\nselector .od-reviews-cta { max-width: 980px; margin: 44px auto 0; background: #fff; border: 1px solid var(--od-line); border-radius: 32px; box-shadow: var(--od-shadow); }\nselector .od-reviews-cta-text { flex: 1; }\nselector .od-reviews-cta-text h3.elementor-heading-title { margin-bottom: 6px; }\nselector .od-reviews-cta-text p { color: var(--od-muted); }\n@media (max-width: 767px) { selector .od-reviews-cta { text-align: center; } }\n\n/* Blog (widget Articles) */\nselector .od-posts .elementor-post__card { border-radius: 24px; border: 1px solid var(--od-line); box-shadow: none; transition: transform .35s, box-shadow .35s; }\nselector .od-posts .elementor-post__card:hover { transform: translateY(-6px); box-shadow: var(--od-shadow); }\nselector .od-posts .elementor-post__title, selector .od-posts .elementor-post__title a { font-family: \"Plus Jakarta Sans\", sans-serif; font-weight: 700; color: var(--od-ink); font-size: 1.2rem; line-height: 1.35; }\nselector .od-posts .elementor-post__badge { background: var(--od-coral-tint); color: var(--od-coral-dark); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; border-radius: 8px; }\nselector .od-posts .elementor-post__read-more { color: var(--od-blue); font-weight: 700; }\nselector .od-posts .elementor-post__excerpt p { color: var(--od-text); font-size: .97rem; }\n\n/* FAQ */\nselector .od-faq { max-width: 860px; margin: 0 auto; width: 100%; }\nselector .od-faq .elementor-toggle-item { background: #fff; border: 1px solid var(--od-line); border-radius: 16px; margin-bottom: 14px; overflow: hidden; }\nselector .od-faq .elementor-tab-title { border: 0 !important; padding: 22px 26px; color: var(--od-ink); font-size: 1.05rem; }\nselector .od-faq .elementor-tab-title a, selector .od-faq .elementor-toggle-title { color: var(--od-ink); }\nselector .od-faq .elementor-tab-title .elementor-toggle-icon { color: var(--od-blue); }\nselector .od-faq .elementor-tab-title.elementor-active .elementor-toggle-icon { color: var(--od-coral); }\nselector .od-faq .elementor-tab-content { border: 0 !important; padding: 0 26px 22px; color: var(--od-text); }\n\n/* Bandeau final */\nselector .od-cta-band { position: relative; overflow: hidden; border-radius: 32px; background: linear-gradient(120deg, var(--od-blue), var(--od-navy)); }\nselector .od-cta-band::before { content: \"\"; position: absolute; width: 520px; height: 520px; border-radius: 50%; right: -160px; top: -220px; background: radial-gradient(circle, rgba(92,225,230,.35), transparent 65%); }\nselector .od-cta-band::after { content: \"\"; position: absolute; width: 360px; height: 360px; border-radius: 50%; left: -120px; bottom: -200px; background: radial-gradient(circle, rgba(143,221,110,.35), transparent 65%); }\nselector .od-cta-band > * { position: relative; z-index: 1; }\nselector .od-cta-band .elementor-heading-title { color: #fff; }\nselector .od-cta-text p { color: #D6F1F7; font-size: 1.12rem; }\nselector .od-cta-note p { text-align: center; font-size: .9rem; color: #A8E6EE; }\n\n/* Pied de page */\nselector .od-footer { border-top: 4px solid; border-image: var(--od-grad) 1; color: #9BB7C6; }\nselector .od-footer p { color: #9BB7C6; font-size: .97rem; }\nselector .od-footer .elementor-heading-title { color: #fff; font-size: 1rem; margin-bottom: 18px; }\nselector .od-footer-logo img { background: #fff; border-radius: 24px; padding: 10px; width: 170px; height: auto; margin-bottom: 18px; }\nselector .od-footer .elementor-icon-list-text { color: #9BB7C6; font-size: .97rem; }\nselector .od-footer .elementor-icon-list-icon i, selector .od-footer .elementor-icon-list-icon svg { color: #5CE1E6; fill: #5CE1E6; font-size: 12px; }\nselector .od-footer a:hover .elementor-icon-list-text, selector .od-footer a:hover { color: var(--od-coral-light); }\nselector .od-foot-links .elementor-icon-list-item, selector .od-foot-contact .elementor-icon-list-item { padding-bottom: 8px !important; }\nselector .od-foot-bottom { border-top: 1px solid rgba(255,255,255,.08); margin-top: 56px; padding: 22px 0; }\nselector .od-foot-bottom p { font-size: .88rem; }\nselector .od-foot-bottom a { color: #9BB7C6; }\n@media (max-width: 767px) { selector .od-footer .e-con { width: 100% !important; } }",
+  "background_background": "classic",
+  "background_color": "#FFFFFF",
+  "padding": {
+   "unit": "px",
+   "top": "0",
+   "right": "0",
+   "bottom": "0",
+   "left": "0",
+   "isLinked": false
+  },
+  "margin": {
+   "unit": "px",
+   "top": "0",
+   "right": "0",
+   "bottom": "0",
+   "left": "0",
+   "isLinked": false
+  }
+ },
+ "content": [
+  {
+   "id": "3eb13b9",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "row",
+    "css_classes": "od-topbar",
+    "padding": {
+     "unit": "px",
+     "top": "8",
+     "right": "24",
+     "bottom": "8",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_justify_content": "space-between",
+    "flex_align_items": "center",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "8",
+     "right": "16",
+     "bottom": "8",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#061A2E"
+   },
+   "elements": [
+    {
+     "id": "bdd640f",
+     "elType": "widget",
+     "widgetType": "icon-list",
+     "settings": {
+      "icon_list": [
+       {
+        "_id": "a3b1799",
+        "text": "06 78 00 59 83",
+        "selected_icon": {
+         "value": "fas fa-phone-alt",
+         "library": "fa-solid"
+        },
+        "link": {
+         "url": "tel:+33678005983",
+         "is_external": ""
+        }
+       },
+       {
+        "_id": "1c80317",
+        "text": "contact@omnidigital.fr",
+        "selected_icon": {
+         "value": "fas fa-envelope",
+         "library": "fa-solid"
+        },
+        "link": {
+         "url": "mailto:contact@omnidigital.fr",
+         "is_external": ""
+        }
+       },
+       {
+        "_id": "06671ad",
+        "text": "Le Perreux-sur-Marne (94)",
+        "selected_icon": {
+         "value": "fas fa-map-marker-alt",
+         "library": "fa-solid"
+        },
+        "link": {
+         "url": "https://www.google.com/maps/search/?api=1&query=25+Rue+Jean+d%27Estienne+d%27Orves,+94170+Le+Perreux-sur-Marne",
+         "is_external": "on"
+        }
+       }
+      ],
+      "view": "inline",
+      "icon_typography_typography": "custom",
+      "icon_typography_font_family": "Inter",
+      "icon_typography_font_weight": "500",
+      "_css_classes": "od-topbar-list"
+     },
+     "elements": []
+    },
+    {
+     "id": "4668525",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p><a href=\"https://claude.omnidigital.fr/contact/audit-gratuit/\">Audit SEO offert, réservez votre appel →</a></p>",
+      "typography_typography": "custom",
+      "typography_font_family": "Inter",
+      "typography_font_weight": "400",
+      "_css_classes": "od-topbar-link",
+      "hide_mobile": "hidden-mobile"
+     },
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "bd9c66b",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "row",
+    "css_classes": "od-header",
+    "padding": {
+     "unit": "px",
+     "top": "8",
+     "right": "24",
+     "bottom": "8",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 20,
+     "column": "20",
+     "row": "20",
+     "isLinked": true
+    },
+    "flex_justify_content": "space-between",
+    "flex_align_items": "center",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "6",
+     "right": "16",
+     "bottom": "6",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "sticky": "top",
+    "sticky_on": [
+     "desktop",
+     "tablet",
+     "mobile"
+    ]
+   },
+   "elements": [
+    {
+     "id": "392456d",
+     "elType": "widget",
+     "widgetType": "image",
+     "settings": {
+      "image": {
+       "id": 3959,
+       "url": "https://claude.omnidigital.fr/wp-content/uploads/2026/10/od-logo-omni-digital-horizontal.png",
+       "source": "library"
+      },
+      "image_size": "full",
+      "link_to": "custom",
+      "link": {
+       "url": "https://claude.omnidigital.fr/",
+       "is_external": ""
+      },
+      "_css_classes": "od-logo"
+     },
+     "elements": []
+    },
+    {
+     "id": "23b8c1e",
+     "elType": "widget",
+     "widgetType": "nav-menu",
+     "settings": {
+      "menu": "omni-digital-navigation",
+      "layout": "horizontal",
+      "align_items": "center",
+      "pointer": "underline",
+      "animation_line": "fade",
+      "dropdown": "tablet",
+      "toggle": "burger",
+      "full_width": "stretch",
+      "color_menu_item": "#0C1D2E",
+      "color_menu_item_hover": "#0A6AA8",
+      "pointer_color_menu_item_hover": "#DC3A2C",
+      "color_menu_item_active": "#0A6AA8",
+      "pointer_color_menu_item_active": "#DC3A2C",
+      "padding_horizontal_menu_item": {
+       "unit": "px",
+       "size": 12,
+       "sizes": []
+      },
+      "toggle_color": "#0C1D2E",
+      "toggle_size": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "color_dropdown_item": "#0C1D2E",
+      "background_color_dropdown_item": "#FFFFFF",
+      "color_dropdown_item_hover": "#0A6AA8",
+      "background_color_dropdown_item_hover": "#F0F9FD",
+      "color_dropdown_item_active": "#0A6AA8",
+      "background_color_dropdown_item_active": "#F0F9FD",
+      "menu_typography_font_size": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "menu_typography_typography": "custom",
+      "menu_typography_font_family": "Inter",
+      "menu_typography_font_weight": "600",
+      "_css_classes": "od-nav"
+     },
+     "elements": []
+    },
+    {
+     "id": "ad3c2d6",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-header-actions",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 12,
+       "column": "12",
+       "row": "12",
+       "isLinked": true
+      },
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "bc8960a",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Prendre RDV",
+        "link": {
+         "url": "https://claude.omnidigital.fr/contact/audit-gratuit/",
+         "is_external": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-btn od-btn--outline od-btn--sm",
+        "hide_tablet": "hidden-tablet",
+        "hide_mobile": "hidden-mobile"
+       },
+       "elements": []
+      },
+      {
+       "id": "1a3d1fa",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Parlons-en",
+        "link": {
+         "url": "https://claude.omnidigital.fr/contact/",
+         "is_external": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-btn od-btn--primary od-btn--sm",
+        "hide_mobile": "hidden-mobile"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "96da1da",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-hero",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "24",
+     "bottom": "88",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "72ff5d2",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-split",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 64,
+       "column": "64",
+       "row": "64",
+       "isLinked": true
+      },
+      "flex_align_items": "center",
+      "flex_direction_mobile": "column",
+      "flex_direction_tablet": "column"
+     },
+     "elements": [
+      {
+       "id": "3b8faa1",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-hero-text",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 52
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "e465e15",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Agence web & SEO pour PME",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-eyebrow"
+         },
+         "elements": []
+        },
+        {
+         "id": "8b9d243",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Votre site web devient votre <span class=\"od-hl\">meilleur commercial</span>.",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "16419f8",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Omni Digital crée, modernise et référence les sites des PME pour qu'ils <strong>apparaissent en haut de Google</strong> et transforment chaque visiteur en demande de contact.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400",
+          "_css_classes": "od-hero-lead"
+         },
+         "elements": []
+        },
+        {
+         "id": "0822e8f",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-actions",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14",
+           "isLinked": true
+          },
+          "flex_wrap": "wrap"
+         },
+         "elements": [
+          {
+           "id": "972a846",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Parlons de votre projet",
+            "link": {
+             "url": "https://claude.omnidigital.fr/contact/",
+             "is_external": ""
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "700",
+            "_css_classes": "od-btn od-btn--primary od-btn--lg od-btn--arrow"
+           },
+           "elements": []
+          },
+          {
+           "id": "6c03119",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Audit SEO offert",
+            "link": {
+             "url": "https://claude.omnidigital.fr/contact/audit-gratuit/",
+             "is_external": ""
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "700",
+            "_css_classes": "od-btn od-btn--outline od-btn--lg"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "37f8a88",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-hero-proof",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14",
+           "isLinked": true
+          },
+          "flex_align_items": "center",
+          "html_tag": "a",
+          "link": {
+           "url": "https://maps.app.goo.gl/xSVsCDgXn7mug36A7",
+           "is_external": "on"
+          }
+         },
+         "elements": [
+          {
+           "id": "07a0ca6",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fab fa-google",
+             "library": "fa-brands"
+            },
+            "_css_classes": "od-google-badge"
+           },
+           "elements": []
+          },
+          {
+           "id": "17fc695",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>5,0/5 sur Google</strong><br><span>Lire les 3 avis de nos clients →</span></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "386ecbe",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-hero-visual",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "width": {
+         "unit": "%",
+         "size": 48
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "815ef6d",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "id": 3965,
+           "url": "https://claude.omnidigital.fr/wp-content/uploads/2026/10/od-atelier-strategie-web.jpg",
+           "source": "library"
+          },
+          "image_size": "full",
+          "_css_classes": "od-hero-photo"
+         },
+         "elements": []
+        },
+        {
+         "id": "8fadc1a",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-float od-float--a",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12",
+           "isLinked": true
+          },
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "9a1de64",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-chart-line",
+             "library": "fa-solid"
+            },
+            "_css_classes": "od-float-ic od-ic--green"
+           },
+           "elements": []
+          },
+          {
+           "id": "06cb0fb",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>Visible</strong><br><span>sur Google & Google Maps</span></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "a65ed38",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-float od-float--b",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12",
+           "isLinked": true
+          },
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "32e7062",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-comments",
+             "library": "fa-solid"
+            },
+            "_css_classes": "od-float-ic od-ic--coral"
+           },
+           "elements": []
+          },
+          {
+           "id": "b74d0fb",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>+ de contacts</strong><br><span>appels, formulaires, RDV</span></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "6b65a6a",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-float od-float--c",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12",
+           "isLinked": true
+          },
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "b38a088",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fab fa-google",
+             "library": "fa-brands"
+            },
+            "_css_classes": "od-float-ic od-ic--blue"
+           },
+           "elements": []
+          },
+          {
+           "id": "8b8148f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>SEO local</strong><br><span>fiche Google optimisée</span></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "571aa87",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-tools",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "24",
+     "bottom": "40",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "4737819",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Les outils et plateformes que nous maîtrisons</p>",
+      "typography_typography": "custom",
+      "typography_font_family": "Inter",
+      "typography_font_weight": "400",
+      "_css_classes": "od-tools-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "6c30751",
+     "elType": "widget",
+     "widgetType": "icon-list",
+     "settings": {
+      "icon_list": [
+       {
+        "_id": "cf36d58",
+        "text": "WordPress",
+        "selected_icon": {
+         "value": "fab fa-wordpress",
+         "library": "fa-brands"
+        }
+       },
+       {
+        "_id": "de8a774",
+        "text": "Elementor",
+        "selected_icon": {
+         "value": "fab fa-elementor",
+         "library": "fa-brands"
+        }
+       },
+       {
+        "_id": "01a9e71",
+        "text": "Shopify",
+        "selected_icon": {
+         "value": "fab fa-shopify",
+         "library": "fa-brands"
+        }
+       },
+       {
+        "_id": "c241330",
+        "text": "Google Analytics 4",
+        "selected_icon": {
+         "value": "fas fa-chart-bar",
+         "library": "fa-solid"
+        }
+       },
+       {
+        "_id": "ce4a2bb",
+        "text": "Search Console",
+        "selected_icon": {
+         "value": "fas fa-search",
+         "library": "fa-solid"
+        }
+       },
+       {
+        "_id": "28df6ec",
+        "text": "Semrush",
+        "selected_icon": {
+         "value": "fas fa-chart-line",
+         "library": "fa-solid"
+        }
+       },
+       {
+        "_id": "b2b9437",
+        "text": "Google Business",
+        "selected_icon": {
+         "value": "fas fa-map-marked-alt",
+         "library": "fa-solid"
+        }
+       }
+      ],
+      "view": "inline",
+      "icon_typography_typography": "custom",
+      "icon_typography_font_family": "Inter",
+      "icon_typography_font_weight": "500",
+      "_css_classes": "od-tools-list"
+     },
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "9e574f7",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-services",
+    "padding": {
+     "unit": "px",
+     "top": "104",
+     "right": "24",
+     "bottom": "104",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "d453dd3",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "css_classes": "od-section-head od-center",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "142c3fe",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Nos expertises",
+        "header_size": "div",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-eyebrow"
+       },
+       "elements": []
+      },
+      {
+       "id": "8d5288f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Tout ce qu'il faut pour <span class=\"od-hl\">gagner des clients</span> en ligne",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_family": "Plus Jakarta Sans",
+        "typography_font_weight": "800"
+       },
+       "elements": []
+      },
+      {
+       "id": "4b0dbb4",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Une seule agence pour concevoir votre site, le rendre visible sur Google et faire entrer votre PME dans l'ère du digital.</p>",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "400",
+        "_css_classes": "od-lead"
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "a0ee89a",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-grid",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between"
+     },
+     "elements": [
+      {
+       "id": "562b0f7",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-service",
+        "padding": {
+         "unit": "px",
+         "top": "34",
+         "right": "34",
+         "bottom": "34",
+         "left": "34",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "4722938",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "01",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800",
+          "_css_classes": "od-num"
+         },
+         "elements": []
+        },
+        {
+         "id": "27cd813",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-desktop",
+           "library": "fa-solid"
+          },
+          "_css_classes": "od-iconbox"
+         },
+         "elements": []
+        },
+        {
+         "id": "371ecd7",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Création de site web",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "f50bea6",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Des sites vitrines et e-commerce rapides, élégants et pensés pour convertir vos visiteurs en clients.</p><ul><li>Design sur-mesure & responsive</li><li>Optimisé pour la conversion</li><li>Facile à mettre à jour</li></ul>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        },
+        {
+         "id": "c37459e",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "En savoir plus",
+          "link": {
+           "url": "https://claude.omnidigital.fr/services/",
+           "is_external": ""
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-btn od-btn--link"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "d8f5641",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-service",
+        "padding": {
+         "unit": "px",
+         "top": "34",
+         "right": "34",
+         "bottom": "34",
+         "left": "34",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "1a2a73e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "02",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800",
+          "_css_classes": "od-num"
+         },
+         "elements": []
+        },
+        {
+         "id": "17be311",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-search",
+           "library": "fa-solid"
+          },
+          "_css_classes": "od-iconbox od-iconbox--coral"
+         },
+         "elements": []
+        },
+        {
+         "id": "6142ea7",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Référencement naturel SEO",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "18c2679",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Gagnez des positions durables sur Google grâce à une stratégie SEO technique, éditoriale et netlinking.</p><ul><li>Audit & stratégie de mots-clés</li><li>Contenus optimisés</li><li>Suivi mensuel des positions</li></ul>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        },
+        {
+         "id": "5be6128",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "En savoir plus",
+          "link": {
+           "url": "https://claude.omnidigital.fr/services/",
+           "is_external": ""
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-btn od-btn--link"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "bacfb3d",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-service",
+        "padding": {
+         "unit": "px",
+         "top": "34",
+         "right": "34",
+         "bottom": "34",
+         "left": "34",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "580d7b7",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "03",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800",
+          "_css_classes": "od-num"
+         },
+         "elements": []
+        },
+        {
+         "id": "9a8dca0",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-map-marked-alt",
+           "library": "fa-solid"
+          },
+          "_css_classes": "od-iconbox"
+         },
+         "elements": []
+        },
+        {
+         "id": "43b7a3a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "SEO local & Google Maps",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "ce9ff57",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Soyez la première entreprise que vos clients trouvent dans votre ville et sur Google Maps.</p><ul><li>Fiche Google Business Profile</li><li>Gestion des avis clients</li><li>Pages locales ciblées</li></ul>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        },
+        {
+         "id": "0b1f916",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "En savoir plus",
+          "link": {
+           "url": "https://claude.omnidigital.fr/services/",
+           "is_external": ""
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-btn od-btn--link"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "60e7a11",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-service",
+        "padding": {
+         "unit": "px",
+         "top": "34",
+         "right": "34",
+         "bottom": "34",
+         "left": "34",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "759cde6",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "04",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800",
+          "_css_classes": "od-num"
+         },
+         "elements": []
+        },
+        {
+         "id": "89463e8",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-rocket",
+           "library": "fa-solid"
+          },
+          "_css_classes": "od-iconbox od-iconbox--coral"
+         },
+         "elements": []
+        },
+        {
+         "id": "1ff49b7",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Transformation digitale",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "f91e1d4",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>On accompagne votre PME dans le passage au numérique : outils, process, présence en ligne.</p><ul><li>Prise de RDV & devis en ligne</li><li>Automatisation & CRM</li><li>Formation de vos équipes</li></ul>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        },
+        {
+         "id": "ec1b8ca",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "En savoir plus",
+          "link": {
+           "url": "https://claude.omnidigital.fr/services/",
+           "is_external": ""
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-btn od-btn--link"
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ddd1dfb",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-why od-tint",
+    "padding": {
+     "unit": "px",
+     "top": "104",
+     "right": "24",
+     "bottom": "104",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "3b982ef",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-split",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 72,
+       "column": "72",
+       "row": "72",
+       "isLinked": true
+      },
+      "flex_align_items": "center",
+      "flex_direction_mobile": "column",
+      "flex_direction_tablet": "column"
+     },
+     "elements": [
+      {
+       "id": "3139d32",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-why-media",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "width": {
+         "unit": "%",
+         "size": 48
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "e2acf72",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "id": 3966,
+           "url": "https://claude.omnidigital.fr/wp-content/uploads/2026/10/od-atelier-client-pme.jpg",
+           "source": "library"
+          },
+          "image_size": "full",
+          "_css_classes": "od-photo"
+         },
+         "elements": []
+        },
+        {
+         "id": "93cd59b",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "css_classes": "od-badge",
+          "padding": {
+           "unit": "px",
+           "top": "22",
+           "right": "26",
+           "bottom": "22",
+           "left": "26",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "dc98d2c",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "1",
+            "header_size": "div",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_weight": "800",
+            "_css_classes": "od-badge-num"
+           },
+           "elements": []
+          },
+          {
+           "id": "5c941cf",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>interlocuteur unique, du début à la fin</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "daf61a2",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-why-text",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 48
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "b45ed1f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Pourquoi Omni Digital",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-eyebrow"
+         },
+         "elements": []
+        },
+        {
+         "id": "11ce5dd",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Un partenaire qui parle <span class=\"od-hl-underline\">résultats</span>, pas jargon.",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "0bbb259",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Nous savons qu'un dirigeant de PME n'a pas de temps à perdre. Notre rôle : vous apporter des clients, simplement, avec un interlocuteur unique et des résultats mesurables chaque mois.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        },
+        {
+         "id": "fc377a4",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "a9488d9",
+            "text": "<strong>Un interlocuteur unique</strong> qui connaît votre entreprise et vous répond sous 24 h ouvrées.",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            }
+           },
+           {
+            "_id": "3a578a8",
+            "text": "<strong>Des sites rapides</strong> et sécurisés, optimisés pour les critères de Google.",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            }
+           },
+           {
+            "_id": "c5e7ce8",
+            "text": "<strong>Un reporting clair</strong> : positions, trafic, appels et formulaires reçus.",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            }
+           },
+           {
+            "_id": "4a15544",
+            "text": "<strong>Vous restez propriétaire</strong> de votre site, domaine et contenus. Sans engagement caché.",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            }
+           }
+          ],
+          "view": "traditional",
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Inter",
+          "icon_typography_font_weight": "500",
+          "_css_classes": "od-checks"
+         },
+         "elements": []
+        },
+        {
+         "id": "146d3f3",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Découvrir notre approche",
+          "link": {
+           "url": "https://claude.omnidigital.fr/a-propos/",
+           "is_external": ""
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-btn od-btn--primary od-btn--arrow"
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5ec42e0",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-engagements od-navy",
+    "padding": {
+     "unit": "px",
+     "top": "104",
+     "right": "24",
+     "bottom": "104",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "5d65a44",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "css_classes": "od-section-head od-center",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "a2bc372",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Nos engagements",
+        "header_size": "div",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-eyebrow"
+       },
+       "elements": []
+      },
+      {
+       "id": "d58842d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Ce que vous pouvez attendre de nous",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_family": "Plus Jakarta Sans",
+        "typography_font_weight": "800"
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "29a3b2e",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-stats",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between"
+     },
+     "elements": [
+      {
+       "id": "19db3ad",
+       "elType": "widget",
+       "widgetType": "counter",
+       "settings": {
+        "starting_number": 0,
+        "ending_number": 24,
+        "prefix": "",
+        "suffix": "h",
+        "title": "pour vous répondre (jours ouvrés)",
+        "thousand_separator": "",
+        "typography_number_typography": "custom",
+        "typography_number_font_family": "Plus Jakarta Sans",
+        "typography_number_font_weight": "800",
+        "typography_title_typography": "custom",
+        "typography_title_font_family": "Inter",
+        "typography_title_font_weight": "400",
+        "_css_classes": "od-stat"
+       },
+       "elements": []
+      },
+      {
+       "id": "614ff3d",
+       "elType": "widget",
+       "widgetType": "counter",
+       "settings": {
+        "starting_number": 0,
+        "ending_number": 1,
+        "prefix": "",
+        "suffix": "",
+        "title": "interlocuteur unique, du début à la fin",
+        "thousand_separator": "",
+        "typography_number_typography": "custom",
+        "typography_number_font_family": "Plus Jakarta Sans",
+        "typography_number_font_weight": "800",
+        "typography_title_typography": "custom",
+        "typography_title_font_family": "Inter",
+        "typography_title_font_weight": "400",
+        "_css_classes": "od-stat"
+       },
+       "elements": []
+      },
+      {
+       "id": "4729473",
+       "elType": "widget",
+       "widgetType": "counter",
+       "settings": {
+        "starting_number": 0,
+        "ending_number": 0,
+        "prefix": "",
+        "suffix": "€",
+        "title": "pour l'audit et le premier échange",
+        "thousand_separator": "",
+        "typography_number_typography": "custom",
+        "typography_number_font_family": "Plus Jakarta Sans",
+        "typography_number_font_weight": "800",
+        "typography_title_typography": "custom",
+        "typography_title_font_family": "Inter",
+        "typography_title_font_weight": "400",
+        "_css_classes": "od-stat"
+       },
+       "elements": []
+      },
+      {
+       "id": "7412b29",
+       "elType": "widget",
+       "widgetType": "counter",
+       "settings": {
+        "starting_number": 0,
+        "ending_number": 100,
+        "prefix": "",
+        "suffix": "%",
+        "title": "propriétaire de votre site et de vos contenus",
+        "thousand_separator": "",
+        "typography_number_typography": "custom",
+        "typography_number_font_family": "Plus Jakarta Sans",
+        "typography_number_font_weight": "800",
+        "typography_title_typography": "custom",
+        "typography_title_font_family": "Inter",
+        "typography_title_font_weight": "400",
+        "_css_classes": "od-stat"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a3d7062",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-method",
+    "padding": {
+     "unit": "px",
+     "top": "104",
+     "right": "24",
+     "bottom": "104",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "fd5166e",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "css_classes": "od-section-head od-center",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "7656af7",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Notre méthode",
+        "header_size": "div",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-eyebrow"
+       },
+       "elements": []
+      },
+      {
+       "id": "6123fdf",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Du premier appel aux premiers clients, <span class=\"od-hl\">en 4 étapes</span>",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_family": "Plus Jakarta Sans",
+        "typography_font_weight": "800"
+       },
+       "elements": []
+      },
+      {
+       "id": "451b4cf",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Une méthode simple, transparente et sans surprise.</p>",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "400",
+        "_css_classes": "od-lead"
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "ece66fa",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-steps",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between"
+     },
+     "elements": [
+      {
+       "id": "4458a88",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-step",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_align_items": "center",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48
+        }
+       },
+       "elements": [
+        {
+         "id": "5af3055",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "01",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800",
+          "_css_classes": "od-step-num"
+         },
+         "elements": []
+        },
+        {
+         "id": "35a240a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Audit gratuit",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "ab9099a",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Nous analysons votre site, votre visibilité Google et vos concurrents.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "a5e5a5a",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-step",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_align_items": "center",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48
+        }
+       },
+       "elements": [
+        {
+         "id": "b3aa7ef",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "02",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800",
+          "_css_classes": "od-step-num"
+         },
+         "elements": []
+        },
+        {
+         "id": "efc8984",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Stratégie",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "aefcfad",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Un plan d'action clair, chiffré et priorisé selon vos objectifs.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "2bcfbe0",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-step",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_align_items": "center",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48
+        }
+       },
+       "elements": [
+        {
+         "id": "12476f5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "03",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800",
+          "_css_classes": "od-step-num"
+         },
+         "elements": []
+        },
+        {
+         "id": "9bf0027",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Création & SEO",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "a28defe",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Design, développement, contenus et optimisation technique.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "29d4bee",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-step",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 23
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "flex_align_items": "center",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48
+        }
+       },
+       "elements": [
+        {
+         "id": "88bd640",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "04",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800",
+          "_css_classes": "od-step-num"
+         },
+         "elements": []
+        },
+        {
+         "id": "baa80dd",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Croissance",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "3eabedc",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Suivi mensuel, améliorations continues et reporting des résultats.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43cf2fd",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-portfolio od-tint",
+    "padding": {
+     "unit": "px",
+     "top": "104",
+     "right": "24",
+     "bottom": "104",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "757750a",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-head-row",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "flex_align_items": "end"
+     },
+     "elements": [
+      {
+       "id": "ea1fca6",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "654821d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Portfolio",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-eyebrow"
+         },
+         "elements": []
+        },
+        {
+         "id": "e27a984",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Quelques <span class=\"od-hl\">réalisations</span>",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "a491f0b",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Voir le portfolio",
+        "link": {
+         "url": "https://claude.omnidigital.fr/portfolio/",
+         "is_external": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-btn od-btn--outline od-btn--arrow"
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "24933b8",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-grid",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between"
+     },
+     "elements": [
+      {
+       "id": "0e51f30",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-project",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31.5
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "3838b32",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "css_classes": "od-browser",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "b02b61c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>digitalreseau.fr</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "_css_classes": "od-browser-bar"
+           },
+           "elements": []
+          },
+          {
+           "id": "8e94423",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "id": 3961,
+             "url": "https://claude.omnidigital.fr/wp-content/uploads/2026/10/od-portfolio-digitalreseau.webp",
+             "source": "library"
+            },
+            "image_size": "full",
+            "link_to": "custom",
+            "link": {
+             "url": "https://digitalreseau.fr",
+             "is_external": "on"
+            },
+            "_css_classes": "od-browser-screen"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "c6a7ee3",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "css_classes": "od-project-body",
+          "padding": {
+           "unit": "px",
+           "top": "26",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "af42e12",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Conseil B2B",
+            "header_size": "div",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_weight": "800",
+            "_css_classes": "od-kind"
+           },
+           "elements": []
+          },
+          {
+           "id": "5304317",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Digital Réseau",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_weight": "800"
+           },
+           "elements": []
+          },
+          {
+           "id": "d7c524a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Site vitrine d'un cabinet de conseil en stratégie digitale et développement commercial pour les PME. Design éditorial épuré, présentation des expertises et de la méthode, appels à l'action vers la prise de contact.</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          },
+          {
+           "id": "c4b032c",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Visiter le site",
+            "link": {
+             "url": "https://digitalreseau.fr",
+             "is_external": "on"
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "700",
+            "_css_classes": "od-btn od-btn--link"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "3602f8a",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-project",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31.5
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "0837b8a",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "css_classes": "od-browser",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "3aa2e4f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>lesbrascasses.fr</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "_css_classes": "od-browser-bar"
+           },
+           "elements": []
+          },
+          {
+           "id": "d261a7a",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "id": 3962,
+             "url": "https://claude.omnidigital.fr/wp-content/uploads/2026/10/od-portfolio-lesbrascasses.webp",
+             "source": "library"
+            },
+            "image_size": "full",
+            "link_to": "custom",
+            "link": {
+             "url": "https://lesbrascasses.fr",
+             "is_external": "on"
+            },
+            "_css_classes": "od-browser-screen"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "10f1bc8",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "css_classes": "od-project-body",
+          "padding": {
+           "unit": "px",
+           "top": "26",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "ce177b4",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Club moto",
+            "header_size": "div",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_weight": "800",
+            "_css_classes": "od-kind"
+           },
+           "elements": []
+          },
+          {
+           "id": "50c187f",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Les Bras Cassés",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_weight": "800"
+           },
+           "elements": []
+          },
+          {
+           "id": "66b2bc5",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Site du club moto Broken Arms – Les Bras Cassés, en Île-de-France : présentation du club, agenda des sorties et soirées, souvenirs des balades, partenaires et boutique de merchandising officiel.</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          },
+          {
+           "id": "448aaa9",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Visiter le site",
+            "link": {
+             "url": "https://lesbrascasses.fr",
+             "is_external": "on"
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "700",
+            "_css_classes": "od-btn od-btn--link"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "7fcd9eb",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-project",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31.5
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "9132b63",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "css_classes": "od-browser",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "e9c349e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>brokenarms.fr</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "_css_classes": "od-browser-bar"
+           },
+           "elements": []
+          },
+          {
+           "id": "f16287e",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "id": 3963,
+             "url": "https://claude.omnidigital.fr/wp-content/uploads/2026/10/od-portfolio-brokenarms.webp",
+             "source": "library"
+            },
+            "image_size": "full",
+            "link_to": "custom",
+            "link": {
+             "url": "https://brokenarms.fr",
+             "is_external": "on"
+            },
+            "_css_classes": "od-browser-screen"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "a7cad41",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "css_classes": "od-project-body",
+          "padding": {
+           "unit": "px",
+           "top": "26",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "e059a0e",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "E-commerce",
+            "header_size": "div",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_weight": "800",
+            "_css_classes": "od-kind"
+           },
+           "elements": []
+          },
+          {
+           "id": "b7c93ac",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Broken Arms",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_weight": "800"
+           },
+           "elements": []
+          },
+          {
+           "id": "508ebad",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Boutique en ligne de la marque biker lifestyle Broken Arms : t-shirts, sweats et accessoires, fiches produits avec choix de taille, panier et espace client, dans un univers de marque fort.</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          },
+          {
+           "id": "366eb16",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Visiter le site",
+            "link": {
+             "url": "https://brokenarms.fr",
+             "is_external": "on"
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "700",
+            "_css_classes": "od-btn od-btn--link"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "988c24c",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-reviews",
+    "padding": {
+     "unit": "px",
+     "top": "104",
+     "right": "24",
+     "bottom": "104",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "62801c4",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "css_classes": "od-section-head od-center",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "98ae433",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Avis clients",
+        "header_size": "div",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-eyebrow"
+       },
+       "elements": []
+      },
+      {
+       "id": "10435a1",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Ce que disent nos clients",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_family": "Plus Jakarta Sans",
+        "typography_font_weight": "800"
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "61b1cd2",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-grid",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between"
+     },
+     "elements": [
+      {
+       "id": "95a76d7",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-review",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31.5
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "beb7991",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-review-top",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_justify_content": "space-between",
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "23bed01",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-quote-left",
+             "library": "fa-solid"
+            },
+            "_css_classes": "od-quote"
+           },
+           "elements": []
+          },
+          {
+           "id": "3f22faf",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>★★★★★</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "_css_classes": "od-stars"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "8fb5d27",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Très satisfait du travail d’Omni Digital.<br>Site moderne, rapide et professionnel.<br>On sent une vraie expertise en marketing et pas seulement en design.<br>Je recommande sans hésiter.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400",
+          "_css_classes": "od-review-text"
+         },
+         "elements": []
+        },
+        {
+         "id": "bf3c4c0",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-review-who",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12",
+           "isLinked": true
+          },
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "89fa6a6",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fab fa-google",
+             "library": "fa-brands"
+            },
+            "_css_classes": "od-google-badge od-google-badge--sm"
+           },
+           "elements": []
+          },
+          {
+           "id": "434308b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>Paulo A.</strong><br><span>Avis Google</span></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ff5e9ff",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-review",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31.5
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "956269f",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-review-top",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_justify_content": "space-between",
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "6dadd6c",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-quote-left",
+             "library": "fa-solid"
+            },
+            "_css_classes": "od-quote"
+           },
+           "elements": []
+          },
+          {
+           "id": "e5d7b87",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>★★★★★</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "_css_classes": "od-stars"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "663f1c9",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Créateur de site web très compétent toujours à l'écoute pour modifier des pages ou la structure de votre site. Mon site https://pratik-informatique.fr a été réalisé dans un temps assez rapide me permettant de le présenter à ma clientèle pour prospecter.<br>N'hésitez pas à faire appel à cette société pour une refonte de votre site ou tout simplement pour la création.<br>Professionnel à l'écoute tout ce que je recherche et généralement tout ce que tout le monde recherche.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400",
+          "_css_classes": "od-review-text"
+         },
+         "elements": []
+        },
+        {
+         "id": "ff50bde",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-review-who",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12",
+           "isLinked": true
+          },
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "5cabcc9",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fab fa-google",
+             "library": "fa-brands"
+            },
+            "_css_classes": "od-google-badge od-google-badge--sm"
+           },
+           "elements": []
+          },
+          {
+           "id": "382567b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>David P.</strong><br><span>Avis Google</span></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1c11f73",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-card od-review",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "32",
+         "bottom": "32",
+         "left": "32",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 31.5
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "7e570dd",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-review-top",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_justify_content": "space-between",
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "2369b58",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-quote-left",
+             "library": "fa-solid"
+            },
+            "_css_classes": "od-quote"
+           },
+           "elements": []
+          },
+          {
+           "id": "827050a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>★★★★★</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400",
+            "_css_classes": "od-stars"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "1745d6d",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Nous avons sollicité Omni Digital pour obtenir des conseils ainsi que plusieurs améliorations sur notre site internet, et tout s’est déroulé parfaitement du début à la fin.</p><p>L’équipe a su être à l’écoute, réactive et très professionnelle. Nous ne regrettons absolument pas d’avoir travaillé avec Omni Digital, surtout au vu du professionnalisme et du savoir-faire de Paulo.</p><p>Une société sérieuse, compétente et impliquée, que nous recommandons sans hésitation.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400",
+          "_css_classes": "od-review-text"
+         },
+         "elements": []
+        },
+        {
+         "id": "dc713d9",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "od-review-who",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12",
+           "isLinked": true
+          },
+          "flex_align_items": "center"
+         },
+         "elements": [
+          {
+           "id": "c17af08",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": "fab fa-google",
+             "library": "fa-brands"
+            },
+            "_css_classes": "od-google-badge od-google-badge--sm"
+           },
+           "elements": []
+          },
+          {
+           "id": "0c0fd19",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>Or Tel SAV</strong><br><span>Avis Google</span></p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Inter",
+            "typography_font_weight": "400"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "6c12ace",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-reviews-cta",
+      "padding": {
+       "unit": "px",
+       "top": "30",
+       "right": "36",
+       "bottom": "30",
+       "left": "36",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28",
+       "isLinked": true
+      },
+      "flex_align_items": "center",
+      "padding_mobile": {
+       "unit": "px",
+       "top": "26",
+       "right": "22",
+       "bottom": "26",
+       "left": "22",
+       "isLinked": false
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "27209bd",
+       "elType": "widget",
+       "widgetType": "icon",
+       "settings": {
+        "selected_icon": {
+         "value": "fab fa-google",
+         "library": "fa-brands"
+        },
+        "_css_classes": "od-google-badge od-google-badge--lg"
+       },
+       "elements": []
+      },
+      {
+       "id": "cac5b68",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-reviews-cta-text",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "a0a04dc",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "5,0/5 sur Google, 3 avis",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "28f4948",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Des avis publics et vérifiables, laissés par nos clients sur notre fiche Google.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "ae34045",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Lire les avis sur Google",
+        "link": {
+         "url": "https://maps.app.goo.gl/xSVsCDgXn7mug36A7",
+         "is_external": "on"
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-btn od-btn--primary od-btn--arrow"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dc5c0ee",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-blog od-tint",
+    "padding": {
+     "unit": "px",
+     "top": "104",
+     "right": "24",
+     "bottom": "104",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "8da0365",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-head-row",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "flex_align_items": "end"
+     },
+     "elements": [
+      {
+       "id": "405cace",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "77d21e0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Blog & conseils",
+          "header_size": "div",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-eyebrow"
+         },
+         "elements": []
+        },
+        {
+         "id": "877409a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Conseils & bonnes pratiques",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "f89897b",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Tous les articles",
+        "link": {
+         "url": "https://claude.omnidigital.fr/blog/",
+         "is_external": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-btn od-btn--outline od-btn--arrow"
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "ff01cf9",
+     "elType": "widget",
+     "widgetType": "posts",
+     "settings": {
+      "_skin": "cards",
+      "cards_columns": "3",
+      "cards_columns_tablet": "2",
+      "cards_columns_mobile": "1",
+      "cards_posts_per_page": 3,
+      "cards_show_excerpt": "yes",
+      "cards_excerpt_length": 22,
+      "cards_meta_data": [
+       "date"
+      ],
+      "cards_read_more_text": "Lire l'article →",
+      "cards_show_badge": "yes",
+      "cards_badge_taxonomy": "category",
+      "cards_show_avatar": "",
+      "cards_thumbnail_size_size": "medium_large",
+      "cards_item_ratio": {
+       "unit": "px",
+       "size": 0.62
+      },
+      "posts_post_type": "post",
+      "cards_column_gap": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "cards_row_gap": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "_css_classes": "od-posts"
+     },
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "444ea7c",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-faq-section",
+    "padding": {
+     "unit": "px",
+     "top": "104",
+     "right": "24",
+     "bottom": "104",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "c039871",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "css_classes": "od-section-head od-center",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "e2817ef",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "FAQ",
+        "header_size": "div",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "700",
+        "_css_classes": "od-eyebrow"
+       },
+       "elements": []
+      },
+      {
+       "id": "8976e33",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Vos questions, nos réponses",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_family": "Plus Jakarta Sans",
+        "typography_font_weight": "800"
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "ae84921",
+     "elType": "widget",
+     "widgetType": "toggle",
+     "settings": {
+      "tabs": [
+       {
+        "_id": "f143262",
+        "tab_title": "Combien coûte la création d'un site internet ?",
+        "tab_content": "<p>Chaque projet est unique : le prix dépend du nombre de pages, des fonctionnalités et du travail de référencement souhaité. Après un échange de 30 minutes, nous vous remettons une proposition détaillée, gratuite et sans engagement.</p>"
+       },
+       {
+        "_id": "02f06b9",
+        "tab_title": "En combien de temps verrai-je des résultats sur Google ?",
+        "tab_content": "<p>Les premiers effets du référencement naturel apparaissent généralement entre 2 et 4 mois, et les résultats les plus solides entre 6 et 12 mois. Le SEO local (Google Maps) peut produire des résultats plus rapidement, parfois en quelques semaines.</p>"
+       },
+       {
+        "_id": "ae270da",
+        "tab_title": "Est-ce que je pourrai modifier mon site moi-même ?",
+        "tab_content": "<p>Oui. Nous livrons un site facile à administrer, avec une formation personnalisée et un guide vidéo. Vous restez propriétaire de votre site, de votre nom de domaine et de vos contenus.</p>"
+       },
+       {
+        "_id": "b88139b",
+        "tab_title": "Travaillez-vous avec des entreprises partout en France ?",
+        "tab_content": "<p>Absolument. Nous accompagnons des PME, artisans, commerçants et professions libérales dans toute la France, en visioconférence ou en rendez-vous sur place selon votre localisation.</p>"
+       },
+       {
+        "_id": "1d53434",
+        "tab_title": "Que comprend l'audit SEO gratuit ?",
+        "tab_content": "<p>Une analyse de votre site (technique, contenus, vitesse, mobile), de votre visibilité locale et de vos principaux concurrents, avec 5 recommandations prioritaires à fort impact. Il vous est présenté lors d'un appel de 30 minutes.</p>"
+       }
+      ],
+      "selected_icon": {
+       "value": "fas fa-plus",
+       "library": "fa-solid"
+      },
+      "selected_active_icon": {
+       "value": "fas fa-times",
+       "library": "fa-solid"
+      },
+      "icon_align": "right",
+      "title_html_tag": "h3",
+      "title_typography_typography": "custom",
+      "title_typography_font_family": "Inter",
+      "title_typography_font_weight": "700",
+      "_css_classes": "od-faq"
+     },
+     "elements": []
+    }
+   ]
+  },
+  {
+   "id": "00d4af5",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-section od-cta",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "24",
+     "bottom": "40",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "section",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "16",
+     "bottom": "64",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "74273ca",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-cta-band",
+      "padding": {
+       "unit": "px",
+       "top": "72",
+       "right": "72",
+       "bottom": "72",
+       "left": "72",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 40,
+       "column": "40",
+       "row": "40",
+       "isLinked": true
+      },
+      "flex_justify_content": "space-between",
+      "flex_align_items": "center",
+      "padding_mobile": {
+       "unit": "px",
+       "top": "40",
+       "right": "24",
+       "bottom": "40",
+       "left": "24",
+       "isLinked": false
+      },
+      "flex_direction_mobile": "column",
+      "flex_direction_tablet": "column"
+     },
+     "elements": [
+      {
+       "id": "5715bd6",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-cta-text",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 58
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "c4c2e2e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Prêt à attirer plus de clients grâce au web ?",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "a416129",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Parlez-nous de votre projet : nous vous répondons sous 24 h ouvrées avec un premier diagnostic gratuit et sans engagement.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "287d06c",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-cta-actions",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 14,
+         "column": "14",
+         "row": "14",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 36
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "1c8eaee",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Parlons de votre projet",
+          "link": {
+           "url": "https://claude.omnidigital.fr/contact/",
+           "is_external": ""
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-btn od-btn--primary od-btn--lg od-btn--block od-btn--arrow"
+         },
+         "elements": []
+        },
+        {
+         "id": "4b22d30",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Réserver un appel de 30 min",
+          "link": {
+           "url": "https://claude.omnidigital.fr/contact/audit-gratuit/",
+           "is_external": ""
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "700",
+          "_css_classes": "od-btn od-btn--ghost od-btn--lg od-btn--block"
+         },
+         "elements": []
+        },
+        {
+         "id": "6f4cc69",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>✔ Gratuit · ✔ Sans engagement · ✔ Réponse sous 24 h</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400",
+          "_css_classes": "od-cta-note"
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "99546eb",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "css_classes": "od-footer",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "24",
+     "bottom": "0",
+     "left": "24",
+     "isLinked": false
+    },
+    "boxed_width": {
+     "unit": "px",
+     "size": 1200,
+     "sizes": []
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "html_tag": "footer",
+    "padding_mobile": {
+     "unit": "px",
+     "top": "56",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#061A2E"
+   },
+   "elements": [
+    {
+     "id": "ec24a3c",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-foot-top",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 40,
+       "column": "40",
+       "row": "40",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "e037e5e",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-foot-brand",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 30
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "f42d47c",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "id": 3960,
+           "url": "https://claude.omnidigital.fr/wp-content/uploads/2026/10/od-logo-omni-digital-creative-agency.png",
+           "source": "library"
+          },
+          "image_size": "full",
+          "link_to": "custom",
+          "link": {
+           "url": "https://claude.omnidigital.fr/",
+           "is_external": ""
+          },
+          "_css_classes": "od-footer-logo"
+         },
+         "elements": []
+        },
+        {
+         "id": "b8db067",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Agence web dédiée aux PME : création de sites internet, référencement naturel (SEO) et accompagnement à la transformation digitale pour générer plus de contacts.</p>",
+          "typography_typography": "custom",
+          "typography_font_family": "Inter",
+          "typography_font_weight": "400"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "e9a1fa6",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-foot-col",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 20
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "b83cfe0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Services",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "81f76d1",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "436d76e",
+            "text": "Création de site web",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/services/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "f8cda88",
+            "text": "Référencement SEO",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/services/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "8026695",
+            "text": "SEO local & Google Maps",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/services/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "c30ff46",
+            "text": "Refonte & optimisation",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/services/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "2dbc213",
+            "text": "Transformation digitale",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/services/",
+             "is_external": ""
+            }
+           }
+          ],
+          "view": "traditional",
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Inter",
+          "icon_typography_font_weight": "500",
+          "_css_classes": "od-foot-links"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "32ebd68",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-foot-col",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 20
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "1b3dbd5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Agence",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "9be578c",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "deda4e1",
+            "text": "À propos",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/a-propos/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "a013ac6",
+            "text": "Portfolio",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/portfolio/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "4c66e0a",
+            "text": "Blog",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/blog/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "d777a47",
+            "text": "Nous contacter",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/contact/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "a39231a",
+            "text": "Prendre rendez-vous",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://claude.omnidigital.fr/contact/audit-gratuit/",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "81f631d",
+            "text": "Nos avis Google",
+            "selected_icon": {
+             "value": "fas fa-angle-right",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://maps.app.goo.gl/xSVsCDgXn7mug36A7",
+             "is_external": "on"
+            }
+           }
+          ],
+          "view": "traditional",
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Inter",
+          "icon_typography_font_weight": "500",
+          "_css_classes": "od-foot-links"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "c754108",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "od-foot-col",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "%",
+         "size": 26
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100
+        }
+       },
+       "elements": [
+        {
+         "id": "2720797",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Contact",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans",
+          "typography_font_weight": "800"
+         },
+         "elements": []
+        },
+        {
+         "id": "f4188f3",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "5fb8d16",
+            "text": "Paulo Da Costa",
+            "selected_icon": {
+             "value": "fas fa-user",
+             "library": "fa-solid"
+            }
+           },
+           {
+            "_id": "c333e86",
+            "text": "25 Rue Jean d'Estienne d'Orves, 94170 Le Perreux-sur-Marne",
+            "selected_icon": {
+             "value": "fas fa-map-marker-alt",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "https://www.google.com/maps/search/?api=1&query=25+Rue+Jean+d%27Estienne+d%27Orves,+94170+Le+Perreux-sur-Marne",
+             "is_external": "on"
+            }
+           },
+           {
+            "_id": "295b471",
+            "text": "06 78 00 59 83",
+            "selected_icon": {
+             "value": "fas fa-phone-alt",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "tel:+33678005983",
+             "is_external": ""
+            }
+           },
+           {
+            "_id": "8a14be6",
+            "text": "contact@omnidigital.fr",
+            "selected_icon": {
+             "value": "fas fa-envelope",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "mailto:contact@omnidigital.fr",
+             "is_external": ""
+            }
+           }
+          ],
+          "view": "traditional",
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Inter",
+          "icon_typography_font_weight": "500",
+          "_css_classes": "od-foot-contact"
+         },
+         "elements": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "00257ad",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "css_classes": "od-foot-bottom",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 16,
+       "column": "16",
+       "row": "16",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between"
+     },
+     "elements": [
+      {
+       "id": "87c5421",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>© 2026 Omni Digital, agence web & SEO pour PME. Tous droits réservés.</p>",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "400"
+       },
+       "elements": []
+      },
+      {
+       "id": "eb2263d",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p><a href=\"https://claude.omnidigital.fr/politique-de-confidentialite/\">Politique de confidentialité</a></p>",
+        "typography_typography": "custom",
+        "typography_font_family": "Inter",
+        "typography_font_weight": "400"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
